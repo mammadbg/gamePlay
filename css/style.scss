@@ -1,0 +1,220 @@
+@font-face {
+  font-family: montRegular;
+  src: url(../fonts/Montserrat-Regular.otf);
+}
+@font-face {
+  font-family: montSemibold;
+  src: url(../fonts/MontserratAlternates-SemiBold.otf);
+}
+@font-face {
+  font-family: montBold;
+  src: url(../fonts/Montserrat-Bold.otf);
+}
+@font-face {
+  font-family: proximaBold;
+  src: url("../fonts/Proxima\ Nova\ Bold.otf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #efefef;
+}
+// header
+header {
+  height: 859px;
+  background: url("../img/space-landing-02.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  .playGame {
+    img {
+      margin-top: 20px;
+      width: 297px;
+      height: 80px;
+    }
+  }
+  .centralContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .gameNumber {
+      font-family: montRegular;
+      font-size: 35px;
+      color: #707070;
+      line-height: 90px;
+    }
+    .onlyAddress {
+      font-family: montRegular;
+      font-size: 68px;
+      color: #ffffff;
+      line-height: 90px;
+    }
+    button {
+      margin: 0 auto;
+      width: 275.84px;
+      height: 76.46px;
+      color: white;
+      font-family: montRegular;
+      font-size: 20px;
+      line-height: 24px;
+      border-radius: 40px;
+      background-image: linear-gradient(to top right, #ff9945, #ff4f88);
+      position: relative;
+      img {
+        position: absolute;
+        top: 29px;
+        right: 50px;
+      }
+    }
+  }
+}
+
+// main
+.mainContent {
+  // heading
+  .heading {
+    font-family: montBold;
+    margin: 0;
+    padding: 0;
+    color: #404272;
+    font-size: 45px;
+
+    position: relative;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    img {
+      width: 111px;
+      height: 5px;
+      position: absolute;
+      bottom: -7px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  // navbar
+  .chooseCategory {
+    margin: 0;
+    padding: 0 5%;
+    margin-top: 20px;
+    .gameCategories {
+      font-family: montRegular;
+      font-size: 14px;
+
+      color: #707070;
+      overflow: hidden;
+      background: white;
+      border-radius: 41px;
+      height: 58px;
+      li {
+        text-align: center;
+        padding-top: 14px;
+      }
+    }
+  }
+
+  // search
+  .search {
+    color: #707070;
+    font-family: montRegular;
+    border: none !important;
+    font: 17px;
+    padding: 0 2%;
+    margin-top: 20px;
+    position: relative;
+    form {
+      input {
+        position: absolute;
+        top: 18px;
+        left: 63px;
+      }
+      i {
+        position: absolute;
+        top: 22px;
+        left: 31px;
+      }
+      background: white;
+      height: 58px;
+      border-radius: 23px;
+      input,
+      form,
+      .input-group {
+        outline: none !important;
+        border: none !important;
+      }
+      textarea:focus,
+      input:focus,
+      .input-group,
+      form:focus {
+        outline: none;
+      }
+    }
+  }
+  // gameIcons
+  // .gameIcons {
+  //   margin-top: 20px;
+  //   li {
+  //     // margin-top: 10px;
+  //     padding: 20px;
+  //   }
+  // }
+  // pagination
+  .pagination {
+    cursor: pointer;
+    a {
+      background: transparent;
+      border: none;
+      color: #707070;
+      font: 22px proximaBold;
+      cursor: pointer;
+    }
+    a:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+// footer
+footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  .logoImage {
+    width: 211px;
+    height: 57px;
+  }
+  ul {
+    li {
+      margin: 0;
+      padding: 0;
+      font-family: montRegular;
+      color: #707070;
+      font-size: 20px;
+      margin-top: 8px;
+    }
+    li:nth-child(1) {
+      margin: 0;
+      padding: 0;
+      font-family: montBold;
+      color: #646464;
+      font-size: 20px;
+    }
+  }
+  .footerBottom {
+    width: 100%;
+    height: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+  }
+}
+
+.navClass {
+  background-image: linear-gradient(to top right, #ff9945, #ff4f88);
+  background-size: contain;
+  border-radius: 23px;
+  color: white;
+}
+
+.paginationClass {
+  background: white;
+}
