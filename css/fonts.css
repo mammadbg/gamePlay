@@ -1,0 +1,24 @@
+@font-face {
+  font-family: montRegular;
+  src: url(../fonts/Montserrat-Regular.otf);
+}
+
+@font-face {
+  font-family: montSemibold;
+  src: url(../fonts/MontserratAlternates-SemiBold.otf);
+}
+
+@font-face {
+  font-family: montBold;
+  src: url(../fonts/Montserrat-Bold.otf);
+}
+
+@font-face {
+  font-family: proximaBold;
+  src: url("../fonts/Proxima Nova Bold.otf");
+}
+
+body {
+  background: #000;
+}
+/*# sourceMappingURL=fonts.css.map */

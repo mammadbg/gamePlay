@@ -1,19 +1,5 @@
-@font-face {
-  font-family: montRegular;
-  src: url(../fonts/Montserrat-Regular.otf);
-}
-@font-face {
-  font-family: montSemibold;
-  src: url(../fonts/MontserratAlternates-SemiBold.otf);
-}
-@font-face {
-  font-family: montBold;
-  src: url(../fonts/Montserrat-Bold.otf);
-}
-@font-face {
-  font-family: proximaBold;
-  src: url("../fonts/Proxima\ Nova\ Bold.otf");
-}
+@import "mixins";
+@import "fonts";
 
 body {
   margin: 0;
@@ -114,7 +100,6 @@ header {
       }
     }
   }
-
   // search
   .search {
     color: #707070;
@@ -152,16 +137,19 @@ header {
       }
     }
   }
+
   // gameIcons
-  // .gameIcons {
-  //   margin-top: 20px;
-  //   li {
-  //     // margin-top: 10px;
-  //     padding: 20px;
-  //   }
-  // }
+  .gameIcons {
+    margin-top: 20px;
+    li {
+      // margin-top: 10px;
+      padding: 20px;
+    }
+  }
+
   // pagination
   .pagination {
+    margin: 60px 0;
     cursor: pointer;
     a {
       background: transparent;
@@ -190,7 +178,7 @@ footer {
       padding: 0;
       font-family: montRegular;
       color: #707070;
-      font-size: 20px;
+      font-size: 13px;
       margin-top: 8px;
     }
     li:nth-child(1) {
@@ -198,7 +186,7 @@ footer {
       padding: 0;
       font-family: montBold;
       color: #646464;
-      font-size: 20px;
+      font-size: 13px;
     }
   }
   .footerBottom {
@@ -217,4 +205,30 @@ footer {
 
 .paginationClass {
   background: white;
+}
+
+@media (max-width: $sm) {
+  footer{
+    .footerBottom {
+      // position: relative;
+      .logoImage {
+        width: auto;
+        height: 37px;
+        // position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 15px 0px;
+      }
+      .copyrights{
+        // position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+      }
+      p{
+        margin-top: 23px;
+      }
+    }
+  }
 }

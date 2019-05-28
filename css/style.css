@@ -19,6 +19,10 @@
 }
 
 body {
+  background: #000;
+}
+
+body {
   margin: 0;
   padding: 0;
   background: #efefef;
@@ -165,7 +169,16 @@ header .centralContainer button img {
   outline: none;
 }
 
+.mainContent .gameIcons {
+  margin-top: 20px;
+}
+
+.mainContent .gameIcons li {
+  padding: 20px;
+}
+
 .mainContent .pagination {
+  margin: 60px 0;
   cursor: pointer;
 }
 
@@ -198,7 +211,7 @@ footer ul li {
   padding: 0;
   font-family: montRegular;
   color: #707070;
-  font-size: 20px;
+  font-size: 13px;
   margin-top: 8px;
 }
 
@@ -207,7 +220,7 @@ footer ul li:nth-child(1) {
   padding: 0;
   font-family: montBold;
   color: #646464;
-  font-size: 20px;
+  font-size: 13px;
 }
 
 footer .footerBottom {
@@ -226,5 +239,24 @@ footer .footerBottom {
 
 .paginationClass {
   background: white;
+}
+
+@media (max-width: 768px) {
+  footer .footerBottom .logoImage {
+    width: auto;
+    height: 37px;
+    bottom: 0;
+    left: 0;
+    margin: 15px 0px;
+  }
+  footer .footerBottom .copyrights {
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+  }
+  footer .footerBottom p {
+    margin-top: 23px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
