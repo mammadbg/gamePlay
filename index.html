@@ -10,7 +10,7 @@
     <!-- reset -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <!-- normalizer -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map"> -->
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -28,7 +28,7 @@
             <div class="centralContainer">
                 <p class="text-center gameNumber">2000 dən çox oyun</p>
                 <p class="text-center onlyAddress">Tək Ünvanda</p>
-                <button class="btn btn-danger d-flex justify-content-center">
+                <button class="btn d-flex justify-content-around">
                     Oyuna başla
                     <img src="img/play-button.png" alt="">
                 </button>
@@ -40,12 +40,13 @@
     <!-- main content container -->
     <div class="mainContent container">
         <div class="row">
+            <!-- heading -->
             <div class="heading text-center col-12">
                 Oyunlar
                 <span><img src="img/Rectangle 18.png" alt=""></span>
             </div>
             <!-- categories -->
-            <div class="col-sm-0 col-md-6 chooseCategory d-none d-md-block">
+            <div class="col-md-6 chooseCategory d-none d-md-block">
                 <ul class="row d-flex justify-content-center gameCategories">
                     <li class="col-4 gameCat1 d-flex">
                         Ən çox oynanılan Oyunlar
@@ -58,6 +59,18 @@
                     </li>
                 </ul>
             </div>
+            <div class="col-12 categoryMobile d-block d-md-none m-0 p-0">
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle text-left pl-4" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Ən çox oynanılan Oyunlar
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Yeni Oyunlar</a>
+                        <a class="dropdown-item" href="#">Bütün Oyunlar</a>
+                    </div>
+                </div>
+            </div>
+
             <!-- search -->
             <div class="col-sm-12 col-md-6 search">
                 <form class="card card-sm">
@@ -103,7 +116,7 @@
                 <nav aria-label="Page navigation example">
                     <ul class="pagination pg-blue">
                         <li class="page-item">
-                            <a class="page-link"><img src="img/right-arrow-1.png" alt=""> Previous</a>
+                            <a class="page-link"><img src="img/left-arrow.png" alt=""> Previous</a>
                         </li>
 
                         <li class="page-item"><a class="page-link">1</a></li>
@@ -119,6 +132,8 @@
 
     </div>
     </div>
+
+    
 
 
     <!-- footer -->
@@ -154,12 +169,12 @@
                         <li>Customer Service</li>
                         <li class="d-none d-md-block"> How Playgame Works</li>
                         <li class="d-none d-md-block">FAQ & Support</li>
-                        <li class="mt-5"><img src="img/Group 1063.png" class="logoImage d-none d-md-block" alt=""></li>
+                        <li class=""><img src="img/Group 1063.png" class="logoImage d-none d-md-block" alt=""></li>
                     </ul>
 
             </div>
             <ul class="row footerBottom mt-2">
-                <li class="col d-md-none"><img src="img/Group 1063.png" class="logoImage d-block d-md-none" alt=""></li>
+                <li class="col d-md-none"><img src="img/Group 1063.png" class="logoImage d-block d-md-none ml-3" alt=""></li>
                 <li class=" copyrights">
                     <p class="">© 2019, AG Development</p>
                 </li>
@@ -169,20 +184,14 @@
 
 
     <!-- scripts -->
-    <div class="scripts">
+    <!-- <div class="scripts"> -->
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
-    </div>
+    <!-- </div> -->
 </body>
 
 </html>

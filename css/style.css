@@ -29,7 +29,7 @@ body {
 }
 
 header {
-  height: 859px;
+  height: 657px;
   background: url("../img/space-landing-02.png");
   background-position: center center;
   background-repeat: no-repeat;
@@ -39,8 +39,7 @@ header {
 
 header .playGame img {
   margin-top: 20px;
-  width: 297px;
-  height: 80px;
+  height: 45px;
 }
 
 header .centralContainer {
@@ -53,26 +52,25 @@ header .centralContainer {
 
 header .centralContainer .gameNumber {
   font-family: montRegular;
-  font-size: 35px;
+  font-size: 20px;
   color: #707070;
-  line-height: 90px;
 }
 
 header .centralContainer .onlyAddress {
   font-family: montRegular;
-  font-size: 68px;
+  font-size: 40px;
   color: #ffffff;
-  line-height: 90px;
 }
 
 header .centralContainer button {
+  font-family: montBold;
+  padding: 0 28px;
   margin: 0 auto;
-  width: 275.84px;
-  height: 76.46px;
+  width: 178px;
+  height: 51px;
   color: white;
   font-family: montRegular;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 14px;
   border-radius: 40px;
   background-image: -webkit-gradient(linear, left bottom, right top, from(#ff9945), to(#ff4f88));
   background-image: linear-gradient(to top right, #ff9945, #ff4f88);
@@ -80,9 +78,8 @@ header .centralContainer button {
 }
 
 header .centralContainer button img {
-  position: absolute;
-  top: 29px;
-  right: 50px;
+  margin-top: 4px;
+  height: 13px;
 }
 
 .mainContent .heading {
@@ -90,7 +87,7 @@ header .centralContainer button img {
   margin: 0;
   padding: 0;
   color: #404272;
-  font-size: 45px;
+  font-size: 34px;
   position: relative;
   margin-bottom: 40px;
   margin-top: 20px;
@@ -132,14 +129,14 @@ header .centralContainer button img {
   font-family: montRegular;
   border: none !important;
   font: 17px;
-  padding: 0 2%;
+  padding: 0 20px;
   margin-top: 20px;
   position: relative;
 }
 
 .mainContent .search form {
   background: white;
-  height: 58px;
+  height: 40px;
   border-radius: 23px;
 }
 
@@ -186,7 +183,7 @@ header .centralContainer button img {
   background: transparent;
   border: none;
   color: #707070;
-  font: 22px proximaBold;
+  font: 14px proximaBold;
   cursor: pointer;
 }
 
@@ -194,16 +191,23 @@ header .centralContainer button img {
   cursor: pointer;
 }
 
+.mainContent .pagination img {
+  height: 14px;
+}
+
 footer {
+  cursor: pointer;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 40px;
 }
 
 footer .logoImage {
-  width: 211px;
-  height: 57px;
+  width: auto;
+  height: 30px;
+  margin-top: 20px;
 }
 
 footer ul li {
@@ -242,6 +246,48 @@ footer .footerBottom {
 }
 
 @media (max-width: 768px) {
+  .mainContent .categoryMobile {
+    padding: 0 30px;
+  }
+  .mainContent .categoryMobile .dropdown {
+    padding: 0 30px;
+    width: 100%;
+    height: 40px;
+  }
+  .mainContent .categoryMobile .dropdown button {
+    width: 100%;
+    background: white;
+    border: 0.03px solid lightgray;
+    border-radius: 0px;
+  }
+  .mainContent .categoryMobile .dropdown .dropdown-menu {
+    padding: 0 30px;
+    width: 80%;
+  }
+  .mainContent .search {
+    font: 17px;
+    padding: 0 30px;
+    margin-top: 20px;
+    position: relative;
+  }
+  .mainContent .search form {
+    background: white;
+    height: 40px;
+    border-radius: 0px;
+  }
+  .mainContent .search form input {
+    position: absolute;
+    top: 7px;
+    left: 64px;
+  }
+  .mainContent .search form i {
+    position: absolute;
+    top: 11px;
+    left: 31px;
+  }
+  .mainContent .mobileCategory .dropdown {
+    width: 100%;
+  }
   footer .footerBottom .logoImage {
     width: auto;
     height: 37px;
