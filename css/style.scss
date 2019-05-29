@@ -34,6 +34,7 @@ header {
             font-size: 20px;
             color: #707070;
             // line-height: 90px;
+            margin: 0;
         }
         .onlyAddress {
             font-family: montRegular;
@@ -64,6 +65,7 @@ header {
 
 // main
 .mainContent {
+    margin-top: 20px;
     // heading
     .heading {
         font-family: montBold;
@@ -87,7 +89,6 @@ header {
     .chooseCategory {
         margin: 0;
         padding: 0 5%;
-        margin-top: 20px;
         .gameCategories {
             font-family: montRegular;
             font-size: 14px;
@@ -115,7 +116,6 @@ header {
         border: none !important;
         font: 17px;
         padding: 0 20px;
-        margin-top: 20px;
         form {
             position: relative;
             background: white;
@@ -158,6 +158,7 @@ header {
         li {
             // margin-top: 10px;
             padding: 20px;
+            padding-bottom: 0;
             z-index: 0;
             position: relative;
             button {
