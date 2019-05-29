@@ -138,25 +138,34 @@ header .centralContainer button img {
   font: 17px;
   padding: 0 20px;
   margin-top: 20px;
-  position: relative;
 }
 
 .mainContent .search form {
+  position: relative;
   background: white;
   height: 40px;
   border-radius: 23px;
 }
 
-.mainContent .search form input {
+.mainContent .search form .searchIcon {
   position: absolute;
-  top: 9px;
-  left: 63px;
+  z-index: 1;
+  top: 10px;
+  left: 24px;
 }
 
-.mainContent .search form i {
+.mainContent .search form input {
+  margin: 0;
+  padding: 0;
   position: absolute;
-  top: 15px;
-  left: 31px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 64px;
+  width: 80%;
+  -webkit-transform: translateY(31%);
+          transform: translateY(31%);
+  z-index: 100;
 }
 
 .mainContent .search form input,
@@ -179,6 +188,39 @@ header .centralContainer button img {
 
 .mainContent .gameIcons li {
   padding: 20px;
+  z-index: 0;
+  position: relative;
+}
+
+.mainContent .gameIcons li button {
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 100px;
+  z-index: 1;
+  font-family: montBold;
+  padding: 0px 15px;
+  width: 125px;
+  height: 40px;
+  color: white;
+  font-family: montRegular;
+  font-size: 12px;
+  border-radius: 40px;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#ff9945), to(#ff4f88));
+  background-image: linear-gradient(to top right, #ff9945, #ff4f88);
+  position: relative;
+}
+
+.mainContent .gameIcons li button img {
+  margin-top: 2px;
+  height: 13px;
+}
+
+.mainContent .gameIcons li:hover button {
+  display: block;
+  opacity: 1;
 }
 
 .mainContent .pagination {
@@ -282,19 +324,24 @@ footer .footerBottom {
     position: relative;
   }
   .mainContent .search form {
+    margin: 0;
+    padding: 0;
     background: white;
     height: 40px;
     border-radius: 0px;
   }
   .mainContent .search form input {
+    margin: 0;
+    padding: 0;
     position: absolute;
-    top: 7px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     left: 64px;
-  }
-  .mainContent .search form i {
-    position: absolute;
-    top: 11px;
-    left: 31px;
+    width: 80%;
+    -webkit-transform: translateY(31%);
+            transform: translateY(31%);
+    z-index: 100;
   }
   .mainContent .mobileCategory .dropdown {
     width: 100%;
