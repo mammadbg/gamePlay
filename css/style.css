@@ -29,7 +29,7 @@ body {
 }
 
 header {
-  height: 657px;
+  height: 350px;
   background: url("../img/space-landing-02.png");
   background-position: center center;
   background-repeat: no-repeat;
@@ -116,12 +116,19 @@ header .centralContainer button img {
   overflow: hidden;
   background: white;
   border-radius: 41px;
-  height: 58px;
+  height: 40px;
 }
 
 .mainContent .chooseCategory .gameCategories li {
   text-align: center;
-  padding-top: 14px;
+  position: relative;
+}
+
+.mainContent .chooseCategory .gameCategories li p {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .mainContent .search {
@@ -142,13 +149,13 @@ header .centralContainer button img {
 
 .mainContent .search form input {
   position: absolute;
-  top: 18px;
+  top: 9px;
   left: 63px;
 }
 
 .mainContent .search form i {
   position: absolute;
-  top: 22px;
+  top: 15px;
   left: 31px;
 }
 
@@ -208,6 +215,10 @@ footer .logoImage {
   width: auto;
   height: 30px;
   margin-top: 20px;
+}
+
+footer .paymentIcons {
+  display: inline-block;
 }
 
 footer ul li {

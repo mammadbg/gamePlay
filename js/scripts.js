@@ -1,17 +1,17 @@
 $(document).ready(function() {
   $(".gameCat1").addClass("navClass");
 
-  $(".gameCat1").click(function() {
+  $(".gameCat1").hover(function() {
     $(".gameCat1").addClass("navClass");
     $(".gameCat2").removeClass("navClass");
     $(".gameCat3").removeClass("navClass");
   });
-  $(".gameCat2").click(function() {
+  $(".gameCat2").hover(function() {
     $(".gameCat2").addClass("navClass");
     $(".gameCat1").removeClass("navClass");
     $(".gameCat3").removeClass("navClass");
   });
-  $(".gameCat3").click(function() {
+  $(".gameCat3").hover(function() {
     $(".gameCat3").addClass("navClass");
     $(".gameCat2").removeClass("navClass");
     $(".gameCat1").removeClass("navClass");

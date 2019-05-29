@@ -12,7 +12,7 @@ body {
 }
 // header
 header {
-  height: 657px;
+  height: 350px;
   background: url("../img/space-landing-02.png");
   background-position: center center;
   background-repeat: no-repeat;
@@ -97,10 +97,17 @@ header {
       overflow: hidden;
       background: white;
       border-radius: 41px;
-      height: 58px;
+      height: 40px;
+
       li {
         text-align: center;
-        padding-top: 14px;
+        position: relative;
+        p{
+          position: absolute;
+          top: 50%;
+          // left: 50%;
+          transform: translateY(-50%)
+        }
       }
     }
   }
@@ -119,12 +126,12 @@ header {
       border-radius: 23px;
       input {
         position: absolute;
-        top: 18px;
+        top: 9px;
         left: 63px;
       }
       i {
         position: absolute;
-        top: 22px;
+        top: 15px;
         left: 31px;
       }
       input,
@@ -181,6 +188,9 @@ footer {
     width: auto;
     height: 30px;
     margin-top: 20px;
+  }
+  .paymentIcons{
+    display: inline-block;
   }
   ul {
     li {
