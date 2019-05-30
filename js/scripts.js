@@ -17,7 +17,7 @@ $(document).ready(function() {
     $(".gameCat1").removeClass("navClass");
   });
 
-  $(".pagination>li:nth-child(7)").addClass("paginationClass");
+  // $(".pagination>li:nth-child(7)").addClass("paginationClass");
 
   $(".page-item").click(function() {
     let pageItems = $(".paginationClass");

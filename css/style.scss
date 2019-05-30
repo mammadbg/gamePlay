@@ -78,7 +78,7 @@ header {
         margin-top: 20px;
         img {
             width: 111px;
-            height: 5px;
+            // height: 5px;
             position: absolute;
             bottom: -7px;
             left: 50%;
@@ -87,6 +87,7 @@ header {
     }
     // navbar
     .chooseCategory {
+        cursor: pointer;
         margin: 0;
         padding: 0 5%;
         .gameCategories {
@@ -121,7 +122,7 @@ header {
             background: white;
             height: 40px;
             border-radius: 23px;
-            .searchIcon{
+            .searchIcon {
                 position: absolute;
                 z-index: 1;
                 top: 10px;
@@ -154,46 +155,54 @@ header {
     }
     // gameIcons
     .gameIcons {
-        margin-top: 20px;
+        // margin-top: 20px;
+        margin: 0 !important;
+        padding: 0 !important;
         li {
-            // margin-top: 10px;
-            padding: 20px;
-            padding-bottom: 0;
-            z-index: 0;
             position: relative;
+            padding: 0;
+            img {
+                margin: 0 !important;
+                padding: 10px;
+            }
             button {
+
+                box-sizing: border-box;
+                margin: 0;
                 opacity: 0;
-                // display: none;
                 position: absolute;
                 left: 50%;
                 transform: translateX(-50%);
-                bottom: 100px;
+                bottom: 70px;
                 z-index: 1;
                 font-family: montBold;
-                padding: 0px 15px;
-                width: 125px;
+                // padding: 0px 15px;
+                width: 134px;
                 height: 40px;
                 color: white;
                 font-family: montRegular;
                 font-size: 12px;
-                // line-height: 24px;
                 border-radius: 40px;
                 background-image: linear-gradient(to top right, #ff9945, #ff4f88);
-                position: relative;
                 img {
-                    margin-top: 2px;
-                    height: 13px;
+                    margin-top: 0;
+                    // height: 13px;
+                    width: 28px;
+                    z-index: 20;
+                }
+                p{
+                    margin: 0;
+                    padding: 0;
                 }
             }
         }
         li:hover button {
-            display: block;
             opacity: 1;
         }
     }
     // pagination
     .pagination {
-        margin: 60px 0;
+        margin: 40px 0;
         cursor: pointer;
         a {
             background: transparent;
@@ -334,4 +343,3 @@ footer {
         }
     }
 }
-
